@@ -17,10 +17,10 @@ I created an html fairly easily, but the css flexbox features gave me a heck of 
 ## Click the links below to access the page and repository respectively.
 <br>
 
- - [Personal Portfolio Page](https://andis90.github.io/Portfolio-Strickland.A/)
+ - [Personal Portfolio Page](https://andis90.github.io/Portfolio-Strickland)
 <br>
 
- - [Personal Portfolio Repository](https://github.com/AndiS90/Porfolio-Strickland.A)
+ - [Personal Portfolio Repository](https://github.com/AndiS90/Portfolio-Strickland)
 <br>
 
 ![Screenshot](./assets/images/screenshot.png)
