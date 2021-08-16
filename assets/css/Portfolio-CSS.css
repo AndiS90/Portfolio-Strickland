@@ -216,6 +216,26 @@ nav li{
 /*Start ContactMe Styles */
 /*main classes end*/
 
+/*Start Pseduo Element Styles*/
+/* The user is hovering over the element */
+a:hover {
+    background-color:#845955;
+    color: #9c8c8c;
+
+  }
+  
+  /* The user is actively pressing down on the element */
+  a:active {
+    font-size: 85%;
+    box-shadow: 0 0 10px #000 inset;
+  }
+  
+  /* The element is currently in focus, either by tabbing to or clicking on it */
+  a:focus {
+    outline: none;
+    border-color:#845955;
+  }
+/*Start Pseduo Element Styles*/
 
 /*Start Media-queries to change styles depending on browser width*/
 @media screen and (max-width: 992px) {
@@ -274,23 +294,6 @@ nav li{
 
 
 
-/* The user is hovering over the element */
-a:hover {
-    background-color:#845955;
-    color: #9c8c8c;
 
-  }
-  
-  /* The user is actively pressing down on the element */
-  a:active {
-    font-size: 85%;
-    box-shadow: 0 0 10px #000 inset;
-  }
-  
-  /* The element is currently in focus, either by tabbing to or clicking on it */
-  a:focus {
-    outline: none;
-    border-color:#845955;
-  }
 
 }
