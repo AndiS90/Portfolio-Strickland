@@ -6,6 +6,11 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea (Andi) Strickland</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <link rel = "stylesheet" href="./assets/css/Reset.CSS">
     <link rel="stylesheet" href="./assets/css/Portfolio-CSS.css">
 
@@ -34,6 +39,9 @@
                 <li>
                     <a href="#ContactMe">Contact Me</a>
                 </li>
+                <li>
+                    <a href="./assets/Resume 2020.pdf" download="Resume">Resume</a>   
+                </li>
             </ul>
         </nav>
 
@@ -48,16 +56,69 @@
             <h2>About Me</h2>
             <img src = "./assets/images/me.jpg" class ="selfie">
             <p>
-                Salutations from an up and coming software developer.
+                Salutations from an up and coming full-stack developer.
                 My name is Andrea Strickland and though I am currently a self-employed nanny, I'm thoroughly enjoying my ongoing education in software development.
-                Prior to 2020 I spent 6 years as a pricing-analyst at a ticket brokerage company. 
+                Prior to 2020 I spent 6 years as a pricing-analyst at a ticket brokerage company. From 2009 to 2012 I  attended UT Dallas majoring in mathematics 
+                minoring in UTeach. Before that I was a small town Valedictorian in Leonard, TX. <br> My passions include absorbing true crime factoids at an alarming rate,
+                swing dancing when I can, and island design a'la Animal Crossing.
             </p>
         </section>
 
 
         <section id="Work" class="Work">
             <h2>Work</h2>
-            <ul>
+<div class= "carousel-container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a role="button" class=""" data-bs-toggle="modal" href="#Modal1">
+                    <img src="./assets/images/project-1.jpg" class="d-block w-100 cimage" alt="computer against skyline" style="max-height:75vh;">
+                    
+                    <div class="carousel-caption ">
+                      <h3>Weather Dashboard</h3>
+                      <p></p>
+                    </div>
+                  </a>
+                  </div>
+
+                  <div class="carousel-item">
+                    <a role="button" data-bs-toggle="modal" href="#Modul2">
+                    <img src="./assets/images/project-2.jpg" class="d-block w-100 cimage" alt="hands on typewriter"  style="max-height:75vh;">
+                    
+                    <div class="carousel-caption ">
+                      <h3>Javascript Quiz</h3>
+                      <p></p>
+                    </div>
+                  </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a role="button" class="" data-bs-toggle="modal" href="#Modal3">
+                    <img src="./assets/images/project-5.jpg" class="d-block w-100 cimage" alt="cluttered books on table"  style="max-height:75vh;">
+                    
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Third slide label</h3>
+                      <p></p>
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <!-- <ul>
                 <li>
                     <a href="https://andis90.github.io/Horiseon-Refactor/" class= "project header"> Horiseon-Refactor </br><img src="./assets/images/project-1.jpg" alt="computer against skyline" class="Project1"></a>
                 </li>
@@ -75,9 +136,7 @@
                     <a href="" class= "ProjectHeader"> Project 5 </br> <img src="./assets/images/project-5.jpg" alt="cluttered books on table" class="ProjectImage"></a>
                 </li>
 
-            </ul>
-
-
+            </ul> -->
         </section>
 
 
@@ -96,15 +155,85 @@
                 <li>
                     <a href="https://twitter.com/GiftofHindsight">Twitter </a>
                 </li>
+                <li>
+                    <a href="tel:+19723797859">Call Me</a>
+                </li>
 
             </ul>
 
         </section>        
     </main>
 
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content bg-secondary">
+            <div class="modal-header">
+              <h4 class="modal-title" id="Modal1Label">Weather Dashboard</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+              <img src="./assets/images/screenshot1.gif" class="screenshotGIF" alt="screenshot gif" style="max-height:75vh; max-width: 113vh;">
+              <ul>
+                <li> <a href="https://github.com/AndiS90/Weather-Dashboard">GitHub Repository</a> </li>
+             <li> <a href="https://andis90.github.io/Weather-Dashboard/">Live Page</a> </li>
+            </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="Modul2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content bg-secondary">
+            <div class="modal-header">
+              <h4 class="modal-title" id="Modal2Label">Javascript Quiz</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+              <img src="./assets/images/screenshot2.gif" class="screenshotGIF" alt="screenshot gif" style="max-height:75vh; max-width: 113vh;">
+              <ul>
+                <li> <a href="https://github.com/AndiS90/Javascript-Quiz">GitHub Repository</a> </li>
+             <li> <a href="https://andis90.github.io/Javascript-Quiz/">Live Page</a> </li>
+            </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="Modul3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content bg-secondary">
+            <div class="modal-header">
+              <h4 class="modal-title" id="Modal3Label">Modal title</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <img src=""" class="" alt="" style="max-height:75vh;">
+
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+         
+            </div>
+          </div>
+        </div>
+      </div>
+
     <footer>
 
             
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
 </body>
 </html>

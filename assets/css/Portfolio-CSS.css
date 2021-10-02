@@ -1,18 +1,18 @@
 /*Start Globals Styles*/
-:root{
-    --mainBackground:#062e18;
-    --mainFont:#ebb1d1 ;
+:root {
+    --mainBackground: #062e18;
+    --mainFont: #ebb1d1;
     --innerPageWidth: 85%;
-    --fontBackground: 
-} 
+    --fontBackground:
+}
 
-::selection{
-background-color: rgb(245, 235, 219);
-color: rgb(216, 95, 186);
+::selection {
+    background-color: rgb(245, 235, 219);
+    color: rgb(216, 95, 186);
 }
 
 html {
-    font-size: .75em; 
+    font-size: .75em;
 }
 
 body {
@@ -22,30 +22,35 @@ body {
     background-color: var(--mainBackground);
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     justify-content: center;
 }
 
-h1 {  
+h1 {
     margin-top: .5em;
     margin-left: 1em;
     font-size: 4em;
     line-height: 1.25;
     color: var(--mainFont);
-    
+
 }
 
 
-h2{
+h2 {
     padding-top: 1rem;
-    padding-bottom:.5em;
+    padding-bottom: .5em;
     padding-left: .5em;
     margin-left: 1em;
-    font-size:3em;
+    font-size: 3em;
     color: var(--mainFont);
 }
 
-p{
+h3 {
+
+    font-size: 3em;
+}
+
+p {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 1em;
@@ -56,45 +61,47 @@ p{
     padding-bottom: 4em;
 }
 
-main{
-    display:flex;
-    flex-flow:column;
+main {
+    display: flex;
+    flex-flow: column;
 }
 
-section{    
+section {
     background-color: var(--mainBackground);
-    background-size: cover; 
+    background-size: cover;
     width: var(--innerPageWidth);
     margin-left: 8em;
 }
+
 /*End Global Styles*/
 
 /*Start Header Styles*/
-header{
+header {
     background-color: var(--mainBackground);
     width: var(--innerPageWidth);
     margin-top: 2em;
     margin-left: 8em;
 }
 
-.Andi{
+.Andi {
     font-size: 1.1em;
-    color:rgb(255, 214, 253);
+    color: rgb(255, 214, 253);
 }
-nav ul{
+
+nav ul {
     width: var(--innerPageWidth);
     display: flex;
     justify-content: flex-end;
     flex-flow: row wrap;
     margin-top: 1em;
     margin-bottom: 1.5em;
-    margin-right: .5em ;
+    margin-right: .5em;
     margin-left: 4em;
     color: var(--mainFont);
 }
 
-nav li{    
-    flex: .1 0 2em;    
+nav li {
+    flex: .1 0 2em;
     font-size: 1.75em;
     list-style: none;
     text-align: center;
@@ -104,7 +111,7 @@ nav li{
 /*End Header Styles*/
 
 /*Start Banner Styles*/
-.banner {       
+.banner {
     height: fill;
     width: var(--innerPageWidth);
     background-position: center;
@@ -112,188 +119,144 @@ nav li{
     background-color: var(--mainBackground);
     margin-top: .5em;
     margin-bottom: .5em;
-    margin-left: 8em; 
+    margin-left: 8em;
 }
+
 /*End Banner*/
 
 
 /* main classes syles start*/
-    /*AboutMe styles*/
+/*AboutMe styles*/
 .AboutMe img {
     float: left;
     width: 150px;
-    height: 150px; 
-    margin-left:50px;
+    height: 150px;
+    margin-left: 50px;
     margin-right: 25px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 
 }
+
 /*End AboutMe styles*/
 
 /*Work Styles*/
-.ProjectImage {
-    width: 18em;
-    height: 18em;
-    
-}
 
- .ProjectHeader{
+
+/* .ProjectHeader {
     color: var(--mainFont);
 
-}  
+} */
 
 .Work {
     margin-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
     margin-left: 8em;
-    display:flex;
+    margin-bottom: 1em;
+    margin-right: 8em;
+
+    /* display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
-   
-    
-}
-.Work ul{   
-    margin-left:4em;
-    margin-right: 4em;
-    display: flex;
-    flex-wrap: wrap; 
-    grid-template-columns: repeat(5 1fr);   
-    grid-auto-rows: minmax(1em, auto);
-    gap: 0;    
-    justify-content:flex-start; /* pulls list items to the left */
-    align-items:flex-end; /*along the opposite axis they are pulled to the bottom*/
-
+    flex-wrap: wrap; */
 }
 
-.Work ul li {
-    text-align: center;
-    font-size: 1.75em;
-    list-style: none;     
-    display: inherit;
-    flex-direction: column; 
-    border: 3px outset var(--mainFont);
-    background-color: #332829; 
-    width: 40%;
-    
+/* .carousel-container { width:640px; height:360px; } */
+
+.carousel .item {
+    height: 150px;
 }
 
-.Work ul li:first-child{ /*sets first flex item to an  independent width*/
-   display: flex; 
-   flex:15em auto;
-   margin-top: 2em;
-   width: 80%; 
-}
-  /*End Work Styles*/
 
 
-  /*Start ContactMe Styles */
-.ContactMe{
+
+
+
+/*Start ContactMe Styles */
+.ContactMe {
     margin-top: 1em;
     margin-bottom: 0em;
-    margin-right: 0em ;
+    margin-right: 0em;
     margin-left: 8em;
-  
+
 
 }
-.ContactMe ul{
-     width: var(--innerPageWidth); 
+
+.ContactMe ul {
+    width: var(--innerPageWidth);
     font-size: 1.75em;
     display: flex;
-    flex-flow: row wrap;  
-    justify-content:flex-end;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     align-items: center;
 
 }
 
 .ContactMe li {
-    flex: 2em 0 1em;
+    /* flex: 2em 0 1em; */
     list-style: none;
     margin-left: 4em;
-   padding-bottom: 2em;
-   color: var(--mainFont);
+    padding-bottom: 2em;
+    color: var(--mainFont);
 
 }
+
 /*Start ContactMe Styles */
 /*main classes end*/
 
 /*Start Pseduo Element Styles*/
 /* The user is hovering over the element */
 a:hover {
-    background-color:#845955;
+    background-color: #845955;
     color: #9c8c8c;
 
-  }
-  
-  /* The user is actively pressing down on the element */
-  a:active {
+}
+
+/* The user is actively pressing down on the element */
+a:active {
     font-size: 85%;
     box-shadow: 0 0 10px #000 inset;
-  }
-  
-  /* The element is currently in focus, either by tabbing to or clicking on it */
-  a:focus {
+}
+
+/* The element is currently in focus, either by tabbing to or clicking on it */
+a:focus {
     outline: none;
-    border-color:#845955;
-  }
+    border-color: #845955;
+}
+
 /*Start Pseduo Element Styles*/
 
-/*Start Media-queries to change styles depending on browser width*/
-@media screen and (max-width: 992px) {
-    .ProjectImage{
-        width: 10em;
-        height: 10em
-    }
 
-    .Work ul{   
-        margin-left:2em;
-        margin-right: 2em;
-        display: flex;
-        flex-flow: column;   
-        justify-content:center; /* pulls list items to the left */
-        align-items: center;
-     }
 
-    .Work ul li{
-        text-align: center;
-        font-size: 1.75em;
-        list-style: none;     
-        display: flex;
-        flex-flow: column; 
-        border: 3px outset var(--mainFont);
-        background-color: #332829; 
-        justify-content:center; /* pulls list items to the left */
-        align-items: center;
-    }
+.modal-title {
 
-    .Work ul li:first-child{ /*sets first flex item to an  independent width*/
-        display: flex; 
-        flex: 5em auto;
-        flex-flow: column;
-        margin-top: 2em;
-        
-        
-  }
-  
-  /* work projects are stacked on top of each other at 768px or smaller */
-  @media screen and (max-width: 768px) {
-    .work ul li {    
-        text-align: center;
-        font-size: 1.75em;
-        list-style: none;     
-        display: flex;
-        flex-flow: column wrap; 
-        border: 3px outset var(--mainFont);
-        background-color: #332829; 
-        width: 50%;
-      
-    }
-  
-  }
-  
-/*End Media-queries to change styles depending on browser width*/
+    font-size: 1.75em;
+
+}
+
+.modal-body {
+    font-size: 1.5em;
 
 
 
+}
 
+.modal img {
 
+    margin-left: 2em;
+}
+
+.modal ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+
+}
+
+.carousel-container {
+    justify-content: center;
+    margin-left: 4em;
+    margin-right: 4em;
 }
